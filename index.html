@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Начало навбара -->
     <header>
         <a href="#" class="logo">
             <i class="fa-solid fa-utensils"></i>
@@ -31,6 +32,8 @@
             <a href="#"><i class="fa-solid fa-heart"></i></a>
         </div>
     </header>
+    <!-- Конец навбара -->
+    <!-- Форма поиска -->
     <form action="#" id="search-form">
         <input type="search" id="search-box" placeholder="Search">
         <label for="search-box">
@@ -38,9 +41,11 @@
         </label>
         <i class="fa-solid fa-x" id="close"></i>
     </form>
+    <!-- Конец формы поиска -->
+    <!-- Начало первой секции -->
     <section class="home" id="home">
         <div class="swiper-container home-slider">
-            <div class="swiper-wrapper wrapper">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide slide">
                     <div class="content">
                         <span>our special dish</span>
@@ -92,6 +97,8 @@
             </div>
         </div>
     </section>
+    <!-- Конец первой секции -->
+    <!-- Начало второй секции -->
     <section class="dishes" id="dishes">
         <h3 class="sub-heading">our dishes</h3>
         <h1 class="heading">popular dishes</h1>
@@ -206,6 +213,8 @@
             </div>
         </div>
     </section>
+    <!-- Конец второй секции -->
+    <!-- Начало третьей секции -->
     <section class="about" id="about">
         <h3 class="sub-heading">about us</h3>
         <h1 class="heading">why choose us?</h1>
@@ -238,6 +247,8 @@
             </div>
         </div>
     </section>
+    <!-- Конец третьей секции -->
+    <!-- НАчало четвертой секции -->
     <section class="menu" id="menu">
         <h3 class="sub-heading">our menu</h3>
         <h1 class="heading">today's speciality</h1>
@@ -459,6 +470,8 @@
             </div>
         </div>
     </section>
+    <!-- Конец четвертой секции -->
+    <!-- Начало пятой секции -->
     <section class="review" id="review">
         <h3 class="sub-heading">customer's review</h3>
         <h1 class="heading">what they say</h1>
@@ -562,54 +575,58 @@
             </div>
         </div>
     </section>
+    <!-- Конец пятой секции -->
+    <!-- Начало шестой секции -->
     <section class="order" id="order">
         <h3 class="sub-heading">order now</h3>
         <h1 class="heading">free and fast</h1>
         <form action="#">
             <div class="inputBox">
                 <div class="input">
-                    <span>your name</span>
+                    <div>your name</div>
                     <input type="text" placeholder="enter your name">
                 </div>
                 <div class="input">
-                    <span>your phone</span>
+                    <div>your phone</div>
                     <input type="tel" placeholder="enter your phone">
                 </div>
             </div>
             <div class="inputBox">
                 <div class="input">
-                    <span>your order</span>
+                    <div>your order</div>
                     <input type="text" placeholder="enter food name">
                 </div>
                 <div class="input">
-                    <span>additional food</span>
+                    <div>additional food</div>
                     <input type="test" placeholder="extra with food">
                 </div>
             </div>
             <div class="inputBox">
                 <div class="input">
-                    <span>how much</span>
+                    <div>how much</div>
                     <input type="number" placeholder="how many orders">
                 </div>
                 <div class="input">
-                    <span>date and time</span>
+                    <div>date and time</div>
                     <input type="datetime-local">
                 </div>
             </div>
             <div class="inputBox">
                 <div class="input">
-                    <span>your address</span>
+                    <div>your address</div>
                    <textarea placeholder="enter your address" cols="30" rows="10"></textarea>
                 </div>
                 <div class="input">
-                    <span>your comments</span>
+                    <div>your comments</div>
                    <textarea placeholder="enter your comments" cols="30" rows="10"></textarea>
                 </div>
             </div>
             <input type="submit" value="order now" class="btn">
         </form>
     </section>
-    <section class="footer">
+    <!-- Конец шестой секции -->
+    <!-- Начало футера -->
+    <footer class="footer">
         <div class="box-container">
             <div class="box">
                 <h3>locations</h3>
@@ -621,31 +638,32 @@
             </div>
             <div class="box">
                 <h3>quick links</h3>
-                <a href="#home">home</a>
-                <a href="#dishes">dishes</a>
-                <a href="#about">about</a>
-                <a href="#menu">menu</a>
-                <a href="#review">review</a>
-                <a href="#order">order</a>
+                <a href="#home">Home</a>
+                <a href="#dishes">Dishes</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Review</a>
+                <a href="#order">Order</a>
             </div>
             <div class="box">
                 <h3>contact info</h3>
-                <a href="#">+123-456-7890</a>
-                <a href="#">+111-222-3333</a>
-                <a href="#">FrontHub@gmail.com</a>
-                <a href="#">FrontHub@yandex.com</a>
+                <a href="tel:+123-456-7890">+123-456-7890</a>
+                <a href="tel:+111-222-3333">+111-222-3333</a>
+                <a href="mailto:FrontHub@gmail.com">FrontHub@gmail.com</a>
+                <a href="mailto:FrontHub@yandex.com">FrontHub@yandex.com</a>
                 <a href="#">Moscow, Russia</a>
             </div>
             <div class="box">
                 <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">teltegram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
             </div>
         </div>
         <div class="rights">copyright @ 2024 by <span>FrontHub</span> </div>
-    </section>
+    </footer>
+    <!-- Конец футера -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

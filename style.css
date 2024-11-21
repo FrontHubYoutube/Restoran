@@ -22,29 +22,39 @@ html {
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 111;
-    box-shadow: var(--box-shadow);
-    background: white;
+html::-webkit-scrollbar {
+	width: 0.3rem;
 }
-
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+	background: var(--green);
+	border-radius: 5rem;
+}
 section {
+    padding: 2rem 9%;
+}
+footer {
     padding: 2rem 9%;
 }
 
 section:nth-child(even) {
     background: #eee;
 }
-
+.sub-heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -60,7 +70,20 @@ section:nth-child(even) {
     background: var(--green);
     letter-spacing: .1rem;
 }
-
+/* Начало навбара */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 111;
+    box-shadow: var(--box-shadow);
+    background: white;
+}
 header .logo {
     color: var(--black);
     font-size: 2.5rem;
@@ -106,7 +129,8 @@ header .icons i:hover {
 header .icons #menu-bars {
     display: none;
 }
-
+/* Конец навбара */
+/* Начало формы поиска */
 #search-form {
     position: fixed;
     top: -110%;
@@ -161,7 +185,8 @@ header .icons #menu-bars {
     right: 3rem;
     font-size: 5rem;
 }
-
+/* Конец формы поиска */
+/* Начало первой секции */
 .home .home-slider .slide {
     display: flex;
     align-items: center;
@@ -203,19 +228,8 @@ header .icons #menu-bars {
     padding: 0.5rem 0;
     line-height: 1.5;
 }
-.sub-heading {
-    text-align: center;
-    color: var(--green);
-    font-size: 2rem;
-    padding-top: 1rem;
-}
-.heading {
-    text-align: center;
-    color: var(--black);
-    font-size: 3rem;
-    padding-bottom: 2rem;
-    text-transform: uppercase;
-}
+/* Конец первой секции */
+/* Начало второй секции */
 .dishes .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -282,6 +296,8 @@ header .icons #menu-bars {
     margin-right: 1rem;
     font-size: 2.5rem;
 }
+/* Конец второй секции */
+/* Начало третьей секции */
 .about .row {
     display: flex;
     flex-wrap: wrap;
@@ -334,6 +350,8 @@ header .icons #menu-bars {
     font-size: 1.5rem;
     color: var(--black);
 }
+/* Конец третьей секции */
+/* Начало четвертой секции */
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -395,6 +413,8 @@ header .icons #menu-bars {
     margin-left: 1rem;
     font-size: 2.5rem;
 }
+/* Конец четвертой секции */
+/* Начало пятой секции */
 .review {
     overflow: hidden;
 }
@@ -438,6 +458,8 @@ header .icons #menu-bars {
     line-height: 1.8;
     color: var(--light-color);
 }
+/* Конец пятой секции */
+/* Начало шестой секции */
 .order form {
     width: 90%;
     border-radius: .5rem;
@@ -455,8 +477,7 @@ header .icons #menu-bars {
 .order form .inputBox .input {
     width: 49%;
 }
-.order form .inputBox .input span {
-    display: block;
+.order form .inputBox .input div {
     padding: 0.5rem 0;
     font-size: 1.5rem;
     color: var(--light-color);
@@ -484,6 +505,8 @@ header .icons #menu-bars {
     display: block;
     margin: 0 auto;
 }
+/* Конец шестой секции */
+/* Начало футера */
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -503,6 +526,7 @@ header .icons #menu-bars {
     padding: 0.5rem 0;
     font-size: 1.5rem;
     color: var(--light-color);
+    text-transform: none;
 }
 .footer .box-container .box a:hover {
     color: var(--green);
@@ -515,6 +539,11 @@ header .icons #menu-bars {
     color: var(--black);
     padding-top: 1rem;
 }
+.footer .rights span {
+    color: var(--green);
+}
+/* Конец футера */
+/* Медиазапросы */
 @media (max-width:991px) {
     html {
         font-size: 55%;
@@ -541,15 +570,12 @@ header .icons #menu-bars {
         left: 0;
         right: 0;
         background: white;
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        border-bottom: .1rem solid rgba(0, 0, 0, .2);
         padding: 1rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
     header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
     }
 
     header .navbar a {
